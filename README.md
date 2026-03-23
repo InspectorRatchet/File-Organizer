@@ -1,0 +1,1 @@
+This will organize files for you by creating a year, month and date folder and placing files accordingly. I created a folder and dumped a large amount photos my phone into it and ran this on that folder.
