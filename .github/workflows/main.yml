@@ -15,7 +15,7 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npx pkg app.mjs --targets node18-win-x64 --output dist/app.exe
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: windows-binary
           path: dist/app.exe
@@ -29,7 +29,7 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npx pkg app.mjs --targets node18-linux-x64 --output dist/app
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: linux-binary
           path: dist/app
@@ -43,4 +43,4 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npx pkg app.mjs --targets node18-macos-x64 --output dist/app
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
